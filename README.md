@@ -1,16 +1,13 @@
-# React + Vite
+**Intuition**
+When i first got the api my main work was to fetch the data from the api(memes here)
+i made the Project page in the components folder under src which has to be used in the app.jsx page which will be rendered inside my main.jsx root file
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+**Implementation**
+Setup is very basic React+vite by npm create vite@latest and further tailwind setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In Project.jsx i used useeffect and in that i fetched the api which returned me a promise so in .then i used res.json to get the response from the api 
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+I used **Tailwind** for styling Nothing very fancy just basic alignment of the memes and and making it similar to the given project bg cyan 
+In order to not get the name wrong i lowercased the text inside Searchbox
